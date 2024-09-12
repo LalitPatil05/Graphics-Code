@@ -1,0 +1,43 @@
+#include<iostream.h> 
+#include<graphics.h> 
+#include<conio.h> 
+main() 
+{ 
+int gd=DETECT,gm,x,y,i=2,j; 
+initgraph(&gd,&gm,"c:\\turboc3\\bgi"); 
+setcolor(i); 
+rectangle(100,50,500,400); 
+setcolor(i+1); 
+rectangle(120,170,210,300); 
+line(210,235,260,235); 
+line(260,235,255,230); 
+line(260,235,255,240); 
+setcolor(i=2); 
+outtextxy(145,220,"INPUT"); 
+outtextxy(140,235,"DEVICE"); 
+setcolor(i+4); 
+rectangle(260,120,350,330); 
+line(260,190,350,190); 
+line(260,260,350,260); 
+line(350,235,400,235); 
+line(400,235,395,230); 
+line(400,235,395,240); 
+setcolor(YELLOW); 
+outtextxy(285,150,"memory"); 
+outtextxy(290,225,"ALU"); 
+outtextxy(275,280,"controll"); 
+outtextxy(290,295,"unit"); 
+setcolor(i+8); 
+setcolor(i+6); 
+rectangle(400,170,480,300); 
+setcolor(i+9); 
+outtextxy(420,220,"output"); 
+outtextxy(420,235,"Device"); 
+setcolor(BLUE); 
+settextstyle(TRIPLEX_FONT, HORIZ_DIR,2); 
+outtextxy(150,70,"block diagram of computer*"); 
+setcolor(WHITE); 
+outtextxy(285,350,"CPU"); 
+getch(); 
+return(0); 
+}a
